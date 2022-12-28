@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;600&display=swap');      
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/*------------HEADER-----------*/
+header{
+    background-color: #d9c9ba;
+}
+
+.encabezado{
+    display: flex;
+    justify-content:center ;
+    flex-direction: row;
+    align-items: center;
+}
+
+.menu nav ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+header img{
+    width: 350px;
+    height: 150px;
+}
+
+header nav{
+    text-align: center;
+
+}
+
+header nav ul li{
+    background-color: #d9c9ba;
+    font-family: 'Cormorant Garamond', serif;;
+    font-size: 20px;
+    padding: 20px;
+    margin: 0px 10px 0px 10px;
+    display: inline-block;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color: #312727;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*-----------MAIN-----------*/
+.hero{
+    width: 100%;
+    height: 100vh;
+    color: white;
+    background-image: url("../img/hero3.png");
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagenes-hero{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 10px 10px 10px 10px
+}
+
+.img-main img{
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.hero p{
+    font-size: 50px;
+}
+
+.hero h3{
+    background-color: rgba(0, 0, 0, 0.452);
+    background-size: cover;
+    text-align: center;
+    font-size: 30px;
+    padding: 10px;
+}
+
+
+.backgroundFormulario{
+    background-color: #b99f86;
+    border: solid rgb(214, 169, 77);
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 30px;
+    color: black;
+}
+
+.backgroundFormulario h1{
+    text-align: center;
+    font-size: 40px;
+}
+
+
+.galeria{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imgRubros img{
+    width: 300px;
+    height: 300px;
+}
+
+.imgRubros{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+
+}
+
+h2{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: #c7c192;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.serviciosEspeciales{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 20px 20px 20px;
+
+}
+
+
+.serviciosEspeciales img{
+    width: 300px;
+    height: 300px;
+}
+.serviciosEspeciales h2{
+    text-align: center;
+    background-color: #b8b38a;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.biografia{
+    width: 100%;
+    height: 80vh;
+    background-color: #b99f86;
+}
+
+.biografia p{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Cormorant Garamond', serif;
+}
+
+.biografia h2{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 70px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+/*-------FOOTER-------*/
+.pie{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.pie .mapa{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.pie .logos{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 100%;
+}
+
+.logos img{
+    width: 50px;
+    height: 50px;
+}
+
+footer div iframe{
+    margin: 40px 40px 40px 40px;
+}
+
+footer{
+    border-top: solid #312727;
+    background-color: #d9c9ba;
+}
+
+
+
+/*----MEDIAS QUERIS----*/
+
+@media screen and (max-widht:768px){
+
+}
+
+
+
+
+@media screen and (max-widht:576px){
+
+}
+
+
+
+@media screen and (max-widht:350px){
+
+}
