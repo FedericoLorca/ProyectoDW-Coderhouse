@@ -24,7 +24,13 @@
     }
 }
 
+.nav-link{
+    font-size: 1.5rem;
+}
 
+.navbar-brand{
+    background-color:  #d9c9ba;
+}
 
 header{
     background-color: #d9c9ba;
@@ -135,13 +141,18 @@ h3{
     background-color: #b99f86;
     border: solid rgb(214, 169, 77);
     font-family: 'Cormorant Garamond', serif;
-    font-size: 30px;
     color: black;
+    font-size: 20px;
+}
+
+.titu-form{
+    font-size: 40px;
+    text-align: left;
 }
 
 .backgroundFormulario h1{
     text-align: center;
-    font-size: 40px;
+    font-size: 60px;
 }
 
 
