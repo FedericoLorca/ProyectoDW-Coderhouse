@@ -10,6 +10,22 @@
 
 
 /*------------HEADER-----------*/
+
+.logo-header {
+    animation: ease-in animation 1s;
+}
+
+@keyframes animation {
+    0%   {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
 header{
     background-color: #d9c9ba;
 }
@@ -81,11 +97,19 @@ header nav ul li a{
 }
 
 .img-main img{
+    margin-top: 20px;
+    margin-bottom: 20px;
     width: 300px;
     height: 300px;
 }
 
+.img-main{
+    transition: 0.3s ease all;
+}
 
+.img-main:hover{
+    transform: scale(1.1);
+}
 
 .hero p{
     font-size: 50px;
@@ -99,6 +123,13 @@ header nav ul li a{
     padding: 10px;
 }
 
+h3{
+    background-size: cover;
+    text-align: center;
+    font-size: 80px;
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
+}
 
 .backgroundFormulario{
     background-color: #b99f86;
