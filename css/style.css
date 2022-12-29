@@ -263,21 +263,32 @@ footer{
 
 
 
-/*----MEDIAS QUERIS----*/
+/*----MEDIAS QUERYS----*/
 
-@media screen and (max-widht:768px){
+@media screen and (max-width: 985px){
 
+    .imagenes-hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero p{
+        font-size: 30px;
+    }
+
+    .imgRubros{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+    .imgRubros img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
-
-
-
-@media screen and (max-widht:576px){
-
-}
-
-
-
-@media screen and (max-widht:350px){
-
+@media screen and (max-width: 530px){
+    .pie{
+        flex-direction: column;
+        align-items: center;
+    }
 }
