@@ -129,13 +129,7 @@ header nav ul li a{
     padding: 10px;
 }
 
-h3{
-    background-size: cover;
-    text-align: center;
-    font-size: 80px;
-    padding: 10px;
-    font-family: 'Cormorant Garamond', serif;
-}
+
 
 .backgroundFormulario{
     background-color: #b99f86;
@@ -217,11 +211,12 @@ h2{
     font-family: 'Cormorant Garamond', serif;
 }
 
-.biografia h2{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 70px;
+.biografia h3{
+    background-size: cover;
     text-align: center;
-    margin-top: 30px;
+    font-size: 80px;
+    padding: 10px;
+    font-family: 'Cormorant Garamond', serif;
 }
 
 
@@ -284,11 +279,64 @@ footer{
         width: 100%;
         height: 100%;
     }
+
+    .serviciosEspeciales{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviciosEspeciales img{
+        margin-bottom: 20px;
+    }
 }
+
+@media screen and (max-width: 875px){
+    .biografia p{
+        font-size: 30px;
+    }
+    .biografia h3{
+        font-size: 50px;
+    }
+
+}
+
 
 @media screen and (max-width: 530px){
     .pie{
         flex-direction: column;
         align-items: center;
+    }
+    .biografia p{
+        font-size: 25px;
+    }
+    .biografia h3{
+        font-size: 45px;
+    }
+
+    .backgroundFormulario h1{
+        font-size: 45px;
+    }
+    .backgroundFormulario{
+        font-size: 15px;
+    }
+    .titu-form{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width: 475px){
+    header img {
+        width: 250px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .biografia p{
+        font-size: 20px;
+    }
+    .biografia h3{
+        font-size: 40px;
     }
 }
