@@ -1,0 +1,86 @@
+/*----MEDIAS QUERYS----*/
+
+@media screen and (max-width: 985px){
+
+    .imagenes-hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .hero p{
+        font-size: 30px;
+    }
+
+    .galeria .imgRubros{
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 250px;
+    }
+    .galeria .imgRubros img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .serviciosEspeciales{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .serviciosEspeciales img{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 875px){
+    .biografia div p{
+        font-size: 30px;
+    }
+    .biografia div h3{
+        font-size: 50px;
+    }
+
+}
+
+
+@media screen and (max-width: 530px){
+    footer .pie{
+        flex-direction: column;
+        align-items: center;
+    }
+    .biografia div p{
+        font-size: 25px;
+    }
+    .biografia div h3{
+        font-size: 45px;
+    }
+
+    .backgroundFormulario .titulo{
+        font-size: 45px;
+    }
+    .backgroundFormulario{
+        font-size: 15px;
+    }
+    .backgroundFormulario .titulo div .titu-form{
+        font-size: 30px;
+    }
+    footer .pie .logos img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 475px){
+    header .container-fluid img {
+        width: 250px;
+        height: 120px;
+    }
+}
+
+@media screen and (max-width: 378px){
+    .biografia div p{
+        font-size: 20px;
+    }
+    .biografia div h3{
+        font-size: 40px;
+    }
+}
