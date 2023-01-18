@@ -1,0 +1,23 @@
+
+
+$color-principal: #d9c9ba;
+$color-secundario: #c7c192;
+$color-terciario: #b99f86;
+
+
+$font-size:
+20px,
+30px,
+40px,
+50px,
+60px,
+80px;
+
+
+@mixin flex ($flex, $justify, $align, $direction){
+    display: $flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+

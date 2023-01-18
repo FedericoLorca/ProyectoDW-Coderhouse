@@ -1,11 +1,11 @@
 /*----HEADER----*/
 
 header{
-    background-color: #d9c9ba;
+    background-color: $color-principal;
     .container-fluid{
 
         .navbar-brand{
-            background-color:  #d9c9ba;
+            background-color: $color-principal;
         }
         img{
             width: 350px;
@@ -14,9 +14,9 @@ header{
     .navbar-nav{
 
         li{
-            background-color: #d9c9ba;
+            background-color: $color-principal;
             font-family: 'Cormorant Garamond', serif;;
-            font-size: 20px;
+            font-size: nth($font-size, 1);
             padding: 20px;
             margin: 0px 10px 0px 10px;
             display: inline-block;

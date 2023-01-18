@@ -8,26 +8,21 @@
     background-position: center;
     text-align: center;
     font-family: 'Cormorant Garamond', serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex(flex, center, center, column);
     p{
-        font-size: 50px;
+        font-size: nth($font-size, 4);
     }
     h3{
         background-color: rgba(0, 0, 0, 0.452);
         background-size: cover;
         text-align: center;
-        font-size: 30px;
+        font-size: nth($font-size, 2);
         padding: 10px;
     }
 }
 
 .imagenes-hero{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    @include flex(flex, space-around, center, row);
     margin: 10px 10px 10px 10px;
     .img-main{
         transition: 0.3s ease all;
@@ -45,15 +40,12 @@
 
 /*----PRODUCTOS----*/
 .galeria{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
+    @include flex(flex, space-around, center, column);
     h2{
         width: 100%;
         height: 100%;
         text-align: center;
-        background-color: #c7c192;
+        background-color: $color-secundario;
         font-family: 'Cormorant Garamond', serif;
     }
     .imgRubros{
@@ -76,7 +68,7 @@ h2{
     width: 100%;
     height: 100%;
     text-align: center;
-    background-color: #c7c192;
+    background-color: $color-secundario;
     font-family: 'Cormorant Garamond', serif;
 }
 
@@ -94,17 +86,17 @@ h2{
 .biografia{
     width: 100%;
     height: 80vh;
-    background-color: #b99f86;
+    background-color: $color-terciario;
     div{
         p{
-            font-size: 40px;
+            font-size: nth($font-size, 3);
             text-align: center;
             font-family: 'Cormorant Garamond', serif;
         }
         h3{
             background-size: cover;
             text-align: center;
-            font-size: 80px;
+            font-size: nth($font-size, 6);
             padding: 10px;
             font-family: 'Cormorant Garamond', serif;
         }
@@ -113,17 +105,17 @@ h2{
 
 /*----CONTACTO----*/    
 .backgroundFormulario{
-    background-color: #b99f86;
+    background-color: $color-terciario;
     border: solid rgb(214, 169, 77);
     font-family: 'Cormorant Garamond', serif;
     color: black;
-    font-size: 20px;
+    font-size: nth($font-size, 1);
         .titulo{
             text-align: center;
-            font-size: 60px;
+            font-size: nth($font-size, 5);
             div{
                 .titu-form{
-                    font-size: 40px;
+                    font-size: nth($font-size, 3);
                     text-align: left;
                 }
             }
