@@ -24,7 +24,6 @@ header {
     font-size: 20px;
     padding: 20px;
     margin: 0px 10px 0px 10px;
-    display: inline-block;
     font-weight: bold;
     font-size: 1.5rem; }
 
@@ -102,6 +101,8 @@ h2 {
 .serviciosEspeciales {
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: center;
   margin: 20px 20px 20px 20px; }
   .serviciosEspeciales img {
     width: 300px;
@@ -110,17 +111,33 @@ h2 {
 /*----NOSOTROS----*/
 .biografia {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   background-color: #b99f86; }
-  .biografia div p {
-    font-size: 40px;
-    text-align: center;
-    font-family: 'Cormorant Garamond', serif; }
-  .biografia div h3 {
+  .biografia .contenido-bio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row; }
+    .biografia .contenido-bio p {
+      margin: 30px;
+      font-size: 40px;
+      text-align: center;
+      font-family: 'Cormorant Garamond', serif; }
+    .biografia .contenido-bio img {
+      box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 9px 10px 5px 0px rgba(0, 0, 0, 0.75);
+      align-items: center;
+      width: 300px;
+      height: 300px;
+      margin-right: 50px;
+      margin-left: 50px; }
+  .biografia h3 {
     background-size: cover;
     text-align: center;
     font-size: 80px;
     padding: 10px;
+    margin-top: 40px;
     font-family: 'Cormorant Garamond', serif; }
 
 /*----CONTACTO----*/
@@ -179,22 +196,29 @@ footer {
     flex-direction: column;
     align-items: center; }
   .serviciosEspeciales img {
-    margin-bottom: 20px; } }
-
-@media screen and (max-width: 875px) {
-  .biografia div p {
+    margin-bottom: 20px; }
+  .biografia {
+    height: 150vh; }
+  .biografia .contenido-bio {
+    flex-direction: column; }
+  .biografia .contenido-bio p {
     font-size: 30px; }
-  .biografia div h3 {
+  .biografia .contenido-bio img {
+    margin-top: 10px; } }
+
+@media screen and (max-width: 787px) {
+  .biografia h3 {
+    font-size: 60px; } }
+
+@media screen and (max-width: 650px) {
+  .biografia h3 {
+    margin-top: 10px;
     font-size: 50px; } }
 
-@media screen and (max-width: 530px) {
+@media screen and (max-width: 540px) {
   footer .pie {
     flex-direction: column;
     align-items: center; }
-  .biografia div p {
-    font-size: 25px; }
-  .biografia div h3 {
-    font-size: 45px; }
   .backgroundFormulario .titulo {
     font-size: 45px; }
   .backgroundFormulario {
@@ -204,7 +228,11 @@ footer {
   footer .pie .logos img {
     width: 40px;
     height: 40px;
-    margin-bottom: 10px; } }
+    margin-bottom: 10px; }
+  .biografia .contenido-bio p {
+    font-size: 20px; }
+  .biografia h3 {
+    font-size: 40px; } }
 
 @media screen and (max-width: 475px) {
   header .container-fluid img {
