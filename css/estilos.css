@@ -229,18 +229,23 @@ footer {
     width: 40px;
     height: 40px;
     margin-bottom: 10px; }
-  .biografia .contenido-bio p {
-    font-size: 20px; }
   .biografia h3 {
     font-size: 40px; } }
 
-@media screen and (max-width: 475px) {
+@media screen and (max-width: 499px) {
   header .container-fluid img {
     width: 250px;
-    height: 120px; } }
+    height: 120px; }
+  .biografia .contenido-bio p {
+    font-size: 25px; }
+  .biografia div h3 {
+    margin-top: 30px; } }
 
-@media screen and (max-width: 378px) {
+@media screen and (max-width: 413px) {
   .biografia div p {
     font-size: 20px; }
   .biografia div h3 {
-    font-size: 40px; } }
+    font-size: 40px; }
+  .biografia .contenido-bio img {
+    width: 220px;
+    height: 220px; } }
